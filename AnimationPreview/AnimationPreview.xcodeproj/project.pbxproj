@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C61E9D3226F151D00F95EA9 /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E9D2226F151D00F95EA9 /* TransitionViewController.swift */; };
+		4C61E9D5226F153C00F95EA9 /* KeyframeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E9D4226F153C00F95EA9 /* KeyframeViewController.swift */; };
 		4C8900E72214300500ADB5C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8900E62214300500ADB5C9 /* AppDelegate.swift */; };
 		4C8900E92214300500ADB5C9 /* SpringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8900E82214300500ADB5C9 /* SpringViewController.swift */; };
 		4C8900EC2214300500ADB5C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8900EA2214300500ADB5C9 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		3BAABAA0827D53726C3699C5 /* Pods-AnimationPreview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationPreview.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationPreview/Pods-AnimationPreview.debug.xcconfig"; sourceTree = "<group>"; };
+		4C61E9D2226F151D00F95EA9 /* TransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
+		4C61E9D4226F153C00F95EA9 /* KeyframeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyframeViewController.swift; sourceTree = "<group>"; };
 		4C8900E32214300500ADB5C9 /* AnimationPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8900E62214300500ADB5C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C8900E82214300500ADB5C9 /* SpringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +48,8 @@
 			isa = PBXGroup;
 			children = (
 				4C8900E82214300500ADB5C9 /* SpringViewController.swift */,
+				4C61E9D2226F151D00F95EA9 /* TransitionViewController.swift */,
+				4C61E9D4226F153C00F95EA9 /* KeyframeViewController.swift */,
 			);
 			path = "View Animations";
 			sourceTree = "<group>";
@@ -173,8 +179,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C8900F12214300700ADB5C9 /* LaunchScreen.storyboard in Resources */,
 				4C8900EE2214300700ADB5C9 /* Assets.xcassets in Resources */,
+				4C8900F12214300700ADB5C9 /* LaunchScreen.storyboard in Resources */,
 				4C8900EC2214300500ADB5C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +240,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C8900E92214300500ADB5C9 /* SpringViewController.swift in Sources */,
+				4C61E9D3226F151D00F95EA9 /* TransitionViewController.swift in Sources */,
+				4C61E9D5226F153C00F95EA9 /* KeyframeViewController.swift in Sources */,
 				4C8900E72214300500ADB5C9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
