@@ -10,21 +10,45 @@ import UIKit
 
 class KeyframeViewController: UIViewController {
 
+    @IBOutlet weak var durationTextField: UITextField!
+    @IBOutlet weak var delayTextField: UITextField!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var exampleView: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func addButton(_ sender: Any) {
+        durationTextField.text = ""
+        delayTextField.text = ""
     }
-    */
 
+    @IBAction func resetButton(_ sender: Any) {
+    }
+
+    @IBAction func goButton(_ sender: Any) {
+    }
+}
+
+// MARK: - Table View
+extension KeyframeViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+}
+
+// MARK: - Picker
+extension KeyframeViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 0
+    }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 0
+    }
 }
