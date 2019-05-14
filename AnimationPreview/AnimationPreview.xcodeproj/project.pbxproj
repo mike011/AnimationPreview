@@ -14,6 +14,7 @@
 		4C8900EC2214300500ADB5C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8900EA2214300500ADB5C9 /* Main.storyboard */; };
 		4C8900EE2214300700ADB5C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8900ED2214300700ADB5C9 /* Assets.xcassets */; };
 		4C8900F12214300700ADB5C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8900EF2214300700ADB5C9 /* LaunchScreen.storyboard */; };
+		4CC04FF5227D97B0006084B9 /* KeyFrameTableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC04FF4227D97B0006084B9 /* KeyFrameTableRow.swift */; };
 		57FB06634547BB07B07C46BA /* Pods_AnimationPreview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D03C730C34DEBF0C8CF6BC /* Pods_AnimationPreview.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		4C8900ED2214300700ADB5C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C8900F02214300700ADB5C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C8900F22214300700ADB5C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CC04FF4227D97B0006084B9 /* KeyFrameTableRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFrameTableRow.swift; sourceTree = "<group>"; };
 		82726D7C53879732CCEA0F3A /* Pods-AnimationPreview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationPreview.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationPreview/Pods-AnimationPreview.release.xcconfig"; sourceTree = "<group>"; };
 		86D03C730C34DEBF0C8CF6BC /* Pods_AnimationPreview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationPreview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -50,6 +52,7 @@
 				4C8900E82214300500ADB5C9 /* SpringViewController.swift */,
 				4C61E9D2226F151D00F95EA9 /* TransitionViewController.swift */,
 				4C61E9D4226F153C00F95EA9 /* KeyframeViewController.swift */,
+				4CC04FF4227D97B0006084B9 /* KeyFrameTableRow.swift */,
 			);
 			path = "View Animations";
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CC04FF5227D97B0006084B9 /* KeyFrameTableRow.swift in Sources */,
 				4C8900E92214300500ADB5C9 /* SpringViewController.swift in Sources */,
 				4C61E9D3226F151D00F95EA9 /* TransitionViewController.swift in Sources */,
 				4C61E9D5226F153C00F95EA9 /* KeyframeViewController.swift in Sources */,
