@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C3E77E2228ACFA6004DE96A /* AutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E77E1228ACFA6004DE96A /* AutoLayoutViewController.swift */; };
 		4C61E9D3226F151D00F95EA9 /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E9D2226F151D00F95EA9 /* TransitionViewController.swift */; };
 		4C61E9D5226F153C00F95EA9 /* KeyframeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E9D4226F153C00F95EA9 /* KeyframeViewController.swift */; };
 		4C8900E72214300500ADB5C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8900E62214300500ADB5C9 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		3BAABAA0827D53726C3699C5 /* Pods-AnimationPreview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationPreview.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationPreview/Pods-AnimationPreview.debug.xcconfig"; sourceTree = "<group>"; };
+		4C3E77E1228ACFA6004DE96A /* AutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewController.swift; sourceTree = "<group>"; };
 		4C61E9D2226F151D00F95EA9 /* TransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
 		4C61E9D4226F153C00F95EA9 /* KeyframeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyframeViewController.swift; sourceTree = "<group>"; };
 		4C8900E32214300500ADB5C9 /* AnimationPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C3E77E0228ACF77004DE96A /* Auto Layout */ = {
+			isa = PBXGroup;
+			children = (
+				4C3E77E1228ACFA6004DE96A /* AutoLayoutViewController.swift */,
+			);
+			path = "Auto Layout";
+			sourceTree = "<group>";
+		};
 		4C61E8C722671EA700F95EA9 /* View Animations */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 				4C61E8C822671EB900F95EA9 /* main */,
 				4C61E8C922671ED300F95EA9 /* ui */,
 				4C61E8C722671EA700F95EA9 /* View Animations */,
+				4C3E77E0228ACF77004DE96A /* Auto Layout */,
 			);
 			path = AnimationPreview;
 			sourceTree = "<group>";
@@ -247,6 +258,7 @@
 				4C61E9D3226F151D00F95EA9 /* TransitionViewController.swift in Sources */,
 				4C61E9D5226F153C00F95EA9 /* KeyframeViewController.swift in Sources */,
 				4C8900E72214300500ADB5C9 /* AppDelegate.swift in Sources */,
+				4C3E77E2228ACFA6004DE96A /* AutoLayoutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
