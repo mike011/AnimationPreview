@@ -16,6 +16,7 @@
 		4C8900EE2214300700ADB5C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8900ED2214300700ADB5C9 /* Assets.xcassets */; };
 		4C8900F12214300700ADB5C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8900EF2214300700ADB5C9 /* LaunchScreen.storyboard */; };
 		4CC04FF5227D97B0006084B9 /* KeyFrameTableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC04FF4227D97B0006084B9 /* KeyFrameTableRow.swift */; };
+		4CCF726A22A12F0800DBF933 /* LayerAnimationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF726922A12F0800DBF933 /* LayerAnimationTableViewCell.swift */; };
 		4CFD029B2296B0CE00F7898E /* LayerAnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD029A2296B0CE00F7898E /* LayerAnimationsViewController.swift */; };
 		57FB06634547BB07B07C46BA /* Pods_AnimationPreview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D03C730C34DEBF0C8CF6BC /* Pods_AnimationPreview.framework */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,7 @@
 		4C8900F02214300700ADB5C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C8900F22214300700ADB5C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CC04FF4227D97B0006084B9 /* KeyFrameTableRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFrameTableRow.swift; sourceTree = "<group>"; };
+		4CCF726922A12F0800DBF933 /* LayerAnimationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerAnimationTableViewCell.swift; sourceTree = "<group>"; };
 		4CFD029A2296B0CE00F7898E /* LayerAnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerAnimationsViewController.swift; sourceTree = "<group>"; };
 		82726D7C53879732CCEA0F3A /* Pods-AnimationPreview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationPreview.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationPreview/Pods-AnimationPreview.release.xcconfig"; sourceTree = "<group>"; };
 		86D03C730C34DEBF0C8CF6BC /* Pods_AnimationPreview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationPreview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				4CFD029A2296B0CE00F7898E /* LayerAnimationsViewController.swift */,
+				4CCF726922A12F0800DBF933 /* LayerAnimationTableViewCell.swift */,
 			);
 			path = "Layer Animations";
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				4C8900E92214300500ADB5C9 /* SpringViewController.swift in Sources */,
 				4C61E9D3226F151D00F95EA9 /* TransitionViewController.swift in Sources */,
 				4C61E9D5226F153C00F95EA9 /* KeyframeViewController.swift in Sources */,
+				4CCF726A22A12F0800DBF933 /* LayerAnimationTableViewCell.swift in Sources */,
 				4CFD029B2296B0CE00F7898E /* LayerAnimationsViewController.swift in Sources */,
 				4C8900E72214300500ADB5C9 /* AppDelegate.swift in Sources */,
 				4C3E77E2228ACFA6004DE96A /* AutoLayoutViewController.swift in Sources */,
