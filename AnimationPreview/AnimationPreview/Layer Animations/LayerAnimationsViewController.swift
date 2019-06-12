@@ -23,24 +23,24 @@ enum Animation: String, CaseIterable {
     case Opacity = "opacity"
     case PositionX = "position.x"
     case PositionY = "position.y"
-    case Bounds // x,y, width, height
     case Rotate = "transform.rotation"
     case ScaleX = "transform.scale.x"
     case ScaleY = "transform.scale.y"
     case TranslateX = "transform.translation.x"
     case TranslateY = "transform.translation.y"
-    case SkewX = "transform.skew.x"
-    case SkewY = "transform.skew.y"
-    case ProjectX = "transform.project.x"
-    case ProjectY = "transform.project.y"
-    case BorderColor = "Border Colour" // colour
-    case BorderWidth = "Border Width" // width
-    case BackgroundColor = "backgroundColor" // colour
-    case CornerRadius = "Corner Radius" // value
-    case ShadowOffset = "Shadow Offset" // size
-    case ShadowOpacity = "Shadow Opacity" // float
-    case ShadowPath = "Shadow Path" // CGPath
-    case ShadowRadius = "Shadow Radius" // float
+//    case SkewX = "transform.skew.x"
+//    case SkewY = "transform.skew.y"
+//    case ProjectX = "transform.project.x"
+//    case ProjectY = "transform.project.y"
+//    case Bounds = "bounds.x" // x,y, width, height
+//    case BorderColor = "Border Colour" // colour
+//    case BorderWidth = "Border Width" // width
+//    case BackgroundColor = "backgroundColor" // colour
+//    case CornerRadius = "Corner Radius" // value
+//    case ShadowOffset = "Shadow Offset" // size
+//    case ShadowOpacity = "Shadow Opacity" // float
+//    case ShadowPath = "Shadow Path" // CGPath
+//    case ShadowRadius = "Shadow Radius" // float
 }
 
 class LayerAnimationsViewController: UIViewController {
