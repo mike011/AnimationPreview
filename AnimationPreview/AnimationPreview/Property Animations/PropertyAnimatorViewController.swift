@@ -14,16 +14,14 @@ class PropertyAnimatorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        pictureImageView.alpha = 0.0
     }
 
     override func viewDidAppear(_ animated: Bool) {
         let scale = UIViewPropertyAnimator(duration: 0.33, curve: .easeIn)
         scale.addAnimations {
-            self.pictureImageView.alpha = 0.0
-        }
-        scale.addAnimations {
             self.pictureImageView.alpha = 1.0
         }
+        scale.startAnimation()
     }
 }

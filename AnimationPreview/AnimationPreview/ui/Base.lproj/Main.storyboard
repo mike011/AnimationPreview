@@ -56,14 +56,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t10-Or-Zel">
                                 <rect key="frame" x="137.5" y="351.5" width="100" height="30"/>
                                 <state key="normal" title="3D Animations"/>
+                                <connections>
+                                    <segue destination="fym-Kf-S8w" kind="show" id="Ce9-WX-zrr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbW-NL-qPF">
                                 <rect key="frame" x="131" y="389.5" width="113" height="30"/>
                                 <state key="normal" title="Particle Emitters"/>
+                                <connections>
+                                    <segue destination="gc0-If-Rvn" kind="show" id="FVn-GG-fdY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2f-sC-Tor">
                                 <rect key="frame" x="125.5" y="427.5" width="124" height="30"/>
                                 <state key="normal" title="Frame Animations"/>
+                                <connections>
+                                    <segue destination="ahx-mD-J46" kind="show" id="5Km-Nh-e9q"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIH-YG-wDL">
                                 <rect key="frame" x="63" y="313.5" width="249" height="30"/>
@@ -104,6 +113,37 @@
             </objects>
             <point key="canvasLocation" x="-12" y="155.17241379310346"/>
         </scene>
+        <!--ThreeD Animations View Controller-->
+        <scene sceneID="Eq5-LD-xpw">
+            <objects>
+                <viewController id="fym-Kf-S8w" customClass="ThreeDAnimationsViewController" customModule="AnimationPreview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="spM-NB-1Kq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dragonfruit" translatesAutoresizingMaskIntoConstraints="NO" id="JAw-bz-ppb">
+                                <rect key="frame" x="81.5" y="259.5" width="212" height="212"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="212" id="IDS-1D-IuE"/>
+                                    <constraint firstAttribute="width" constant="212" id="XKu-FN-SS4"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JAw-bz-ppb" firstAttribute="centerX" secondItem="SaO-RT-IBm" secondAttribute="centerX" id="4nT-RM-tCb"/>
+                            <constraint firstItem="JAw-bz-ppb" firstAttribute="centerY" secondItem="SaO-RT-IBm" secondAttribute="centerY" id="WQj-Af-WtB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SaO-RT-IBm"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="spM-NB-1Kq" id="4Uc-Xk-6ly"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u0Q-Js-sIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="740" y="1695.2023988005999"/>
+        </scene>
         <!--Property Animator View Controller-->
         <scene sceneID="L73-eM-Lq4">
             <objects>
@@ -112,19 +152,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" You can animate changes to views and allow the dynamic modification of those animations." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wY-T5-Qr4">
-                                <rect key="frame" x="16" y="76" width="343" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wY-T5-Qr4">
+                                <rect key="frame" x="8" y="72" width="359" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="nZq-jI-40O"/>
+                                </constraints>
+                                <string key="text"> You can animate changes to views and allow the dynamic modification of those animations. Below is a simple animation fading in.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="durian" translatesAutoresizingMaskIntoConstraints="NO" id="LvB-SK-oWO">
-                                <rect key="frame" x="67" y="224" width="248" height="213"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="durian" translatesAutoresizingMaskIntoConstraints="NO" id="LvB-SK-oWO">
+                                <rect key="frame" x="63.5" y="259" width="248" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="Nhm-my-4DP"/>
+                                    <constraint firstAttribute="height" constant="213" id="fqJ-vb-Lmh"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0wY-T5-Qr4" firstAttribute="leading" secondItem="4Bu-df-FCx" secondAttribute="leading" constant="8" id="7OJ-tO-pTc"/>
+                            <constraint firstItem="LvB-SK-oWO" firstAttribute="centerX" secondItem="4Bu-df-FCx" secondAttribute="centerX" id="9KS-rS-WF1"/>
+                            <constraint firstItem="4Bu-df-FCx" firstAttribute="trailing" secondItem="0wY-T5-Qr4" secondAttribute="trailing" constant="8" id="OPm-Sv-lb6"/>
+                            <constraint firstItem="LvB-SK-oWO" firstAttribute="centerY" secondItem="4Bu-df-FCx" secondAttribute="centerY" id="bbg-Vk-lWx"/>
+                            <constraint firstItem="0wY-T5-Qr4" firstAttribute="top" secondItem="4Bu-df-FCx" secondAttribute="top" constant="8" id="hhM-uc-uaL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4Bu-df-FCx"/>
                     </view>
                     <connections>
@@ -133,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qf-i9-Y2m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-12" y="961.16941529235385"/>
+            <point key="canvasLocation" x="740" y="994"/>
         </scene>
         <!--Layer Animations View Controller-->
         <scene sceneID="UMq-LJ-EOG">
@@ -300,7 +353,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P5j-jS-agP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="762.39999999999998" y="217.24137931034485"/>
+            <point key="canvasLocation" x="740" y="-369"/>
         </scene>
         <!--Transition Animation View Controller-->
         <scene sceneID="9vd-Fa-cEE">
@@ -340,7 +393,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x1i-Mr-Bix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="760.79999999999995" y="979.16041979010504"/>
+            <point key="canvasLocation" x="740" y="298"/>
         </scene>
         <!--Fade In View Controller-->
         <scene sceneID="il2-zh-a7h">
@@ -368,7 +421,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zyu-An-Yv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1444" y="986.35682158920542"/>
+            <point key="canvasLocation" x="1457" y="297"/>
         </scene>
         <!--Auto Layout View Controller-->
         <scene sceneID="wVQ-3t-JMu">
@@ -512,7 +565,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfq-Nk-eRh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="764" y="-459.22038980509751"/>
+            <point key="canvasLocation" x="740" y="-1055"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pr6-J5-VaJ">
@@ -1069,10 +1122,41 @@
             </objects>
             <point key="canvasLocation" x="-951.20000000000005" y="155.17241379310346"/>
         </scene>
+        <!--Particle Emitters View Controller-->
+        <scene sceneID="GxZ-VP-EAK">
+            <objects>
+                <viewController id="gc0-If-Rvn" customClass="ParticleEmittersViewController" customModule="AnimationPreview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H1L-HK-GhH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vjI-pW-Rnq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h6k-hi-Dcn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="740" y="2389"/>
+        </scene>
+        <!--Frame Animations View Controller-->
+        <scene sceneID="kzY-73-mC6">
+            <objects>
+                <viewController id="ahx-mD-J46" customClass="FrameAnimationsViewController" customModule="AnimationPreview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y3a-sx-ABX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="T8W-dY-2KC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GcV-nv-yVC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="740" y="3097"/>
+        </scene>
     </scenes>
     <resources>
         <image name="banana" width="300" height="222.5"/>
         <image name="bunny" width="243" height="298"/>
+        <image name="dragonfruit" width="800" height="800"/>
         <image name="durian" width="640" height="360"/>
         <image name="giraffe" width="200" height="339"/>
     </resources>

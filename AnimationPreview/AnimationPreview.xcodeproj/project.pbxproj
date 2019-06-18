@@ -20,6 +20,9 @@
 		4CCF727D22AFE16600DBF933 /* TransitionAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF727C22AFE16600DBF933 /* TransitionAnimationViewController.swift */; };
 		4CCF727F22AFE3D600DBF933 /* FadeInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF727E22AFE3D600DBF933 /* FadeInViewController.swift */; };
 		4CCF728222AFEA0D00DBF933 /* PropertyAnimatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF728122AFEA0D00DBF933 /* PropertyAnimatorViewController.swift */; };
+		4CCF729022B8F2EC00DBF933 /* ThreeDAnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF728F22B8F2EC00DBF933 /* ThreeDAnimationsViewController.swift */; };
+		4CCF729222B8F2F800DBF933 /* ParticleEmittersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF729122B8F2F800DBF933 /* ParticleEmittersViewController.swift */; };
+		4CCF729422B8F30200DBF933 /* FrameAnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF729322B8F30200DBF933 /* FrameAnimationsViewController.swift */; };
 		4CFD029B2296B0CE00F7898E /* LayerAnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD029A2296B0CE00F7898E /* LayerAnimationsViewController.swift */; };
 		57FB06634547BB07B07C46BA /* Pods_AnimationPreview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D03C730C34DEBF0C8CF6BC /* Pods_AnimationPreview.framework */; };
 /* End PBXBuildFile section */
@@ -41,6 +44,9 @@
 		4CCF727C22AFE16600DBF933 /* TransitionAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimationViewController.swift; sourceTree = "<group>"; };
 		4CCF727E22AFE3D600DBF933 /* FadeInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeInViewController.swift; sourceTree = "<group>"; };
 		4CCF728122AFEA0D00DBF933 /* PropertyAnimatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyAnimatorViewController.swift; sourceTree = "<group>"; };
+		4CCF728F22B8F2EC00DBF933 /* ThreeDAnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDAnimationsViewController.swift; sourceTree = "<group>"; };
+		4CCF729122B8F2F800DBF933 /* ParticleEmittersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleEmittersViewController.swift; sourceTree = "<group>"; };
+		4CCF729322B8F30200DBF933 /* FrameAnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameAnimationsViewController.swift; sourceTree = "<group>"; };
 		4CFD029A2296B0CE00F7898E /* LayerAnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerAnimationsViewController.swift; sourceTree = "<group>"; };
 		82726D7C53879732CCEA0F3A /* Pods-AnimationPreview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationPreview.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationPreview/Pods-AnimationPreview.release.xcconfig"; sourceTree = "<group>"; };
 		86D03C730C34DEBF0C8CF6BC /* Pods_AnimationPreview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationPreview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,7 +129,10 @@
 				4C3E77E0228ACF77004DE96A /* Auto Layout */,
 				4CFD02992296B09000F7898E /* Layer Animations */,
 				4CCF727B22AFE13B00DBF933 /* View Controller Transition Animations */,
-				4CCF728022AFE9D900DBF933 /* PropertyAnimator */,
+				4CCF728022AFE9D900DBF933 /* Property Animations */,
+				4CCF728C22B8F28300DBF933 /* 3D Animations */,
+				4CCF728D22B8F29700DBF933 /* Particle Emitters */,
+				4CCF728E22B8F2A500DBF933 /* Frame Animations */,
 			);
 			path = AnimationPreview;
 			sourceTree = "<group>";
@@ -137,12 +146,36 @@
 			path = "View Controller Transition Animations";
 			sourceTree = "<group>";
 		};
-		4CCF728022AFE9D900DBF933 /* PropertyAnimator */ = {
+		4CCF728022AFE9D900DBF933 /* Property Animations */ = {
 			isa = PBXGroup;
 			children = (
 				4CCF728122AFEA0D00DBF933 /* PropertyAnimatorViewController.swift */,
 			);
-			path = PropertyAnimator;
+			path = "Property Animations";
+			sourceTree = "<group>";
+		};
+		4CCF728C22B8F28300DBF933 /* 3D Animations */ = {
+			isa = PBXGroup;
+			children = (
+				4CCF728F22B8F2EC00DBF933 /* ThreeDAnimationsViewController.swift */,
+			);
+			path = "3D Animations";
+			sourceTree = "<group>";
+		};
+		4CCF728D22B8F29700DBF933 /* Particle Emitters */ = {
+			isa = PBXGroup;
+			children = (
+				4CCF729122B8F2F800DBF933 /* ParticleEmittersViewController.swift */,
+			);
+			path = "Particle Emitters";
+			sourceTree = "<group>";
+		};
+		4CCF728E22B8F2A500DBF933 /* Frame Animations */ = {
+			isa = PBXGroup;
+			children = (
+				4CCF729322B8F30200DBF933 /* FrameAnimationsViewController.swift */,
+			);
+			path = "Frame Animations";
 			sourceTree = "<group>";
 		};
 		4CFD02992296B09000F7898E /* Layer Animations */ = {
@@ -300,9 +333,12 @@
 				4C61E9D3226F151D00F95EA9 /* TransitionViewController.swift in Sources */,
 				4C61E9D5226F153C00F95EA9 /* KeyframeViewController.swift in Sources */,
 				4CCF726A22A12F0800DBF933 /* LayerAnimationTableViewCell.swift in Sources */,
+				4CCF729222B8F2F800DBF933 /* ParticleEmittersViewController.swift in Sources */,
+				4CCF729022B8F2EC00DBF933 /* ThreeDAnimationsViewController.swift in Sources */,
 				4CFD029B2296B0CE00F7898E /* LayerAnimationsViewController.swift in Sources */,
 				4C8900E72214300500ADB5C9 /* AppDelegate.swift in Sources */,
 				4C3E77E2228ACFA6004DE96A /* AutoLayoutViewController.swift in Sources */,
+				4CCF729422B8F30200DBF933 /* FrameAnimationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
