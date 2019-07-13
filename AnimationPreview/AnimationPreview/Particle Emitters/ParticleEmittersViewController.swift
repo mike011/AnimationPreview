@@ -36,8 +36,17 @@ class ParticleEmittersViewController: UIViewController {
     @IBOutlet weak var alphaRangeTextField: UITextField!
     @IBOutlet weak var alphaSpeedTextField: UITextField!
 
+    @IBOutlet weak var updateButtonText: UIButton!
+    var updateBoolPressed = false
+
+    private let emitter = CAEmitterLayer()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        setInitialValues()
+    }
+
+    private func setInitialValues() {
         set(birthRateTextField, to: 20)
         set(lifetimeTextField, to: 3.5)
         set(lifetimeRangeTextField, to: 1.0)
@@ -62,17 +71,42 @@ class ParticleEmittersViewController: UIViewController {
 
         set(alphaRangeTextField, to: 0.75)
         set(alphaSpeedTextField, to: -0.15)
+
+        updateButtonText.setTitle("Go", for: .normal)
     }
 
     @IBAction func updateButtonPressed(_ sender: Any) {
-        view.layer.removeAllAnimations()
+        emitter.removeFromSuperlayer()
         animate()
+        updateBoolPressed = true
+        updateButtonUpdate()
+    }
+
+    @IBAction func stopButtonPressed(_ sender: Any) {
+        emitter.removeFromSuperlayer()
+        updateBoolPressed = false
+        updateButtonUpdate()
+    }
+
+    @IBAction func resetButtonPressed(_ sender: Any) {
+        emitter.removeFromSuperlayer()
+        updateBoolPressed = false
+        updateButtonUpdate()
+        setInitialValues()
+    }
+
+    func updateButtonUpdate() {
+        if updateBoolPressed {
+            updateButtonText.setTitle("Update", for: .normal)
+        } else {
+            updateButtonText.setTitle("Go", for: .normal)
+        }
     }
 
     func animate() {
 
         let rect = CGRect(x: 0.0, y: 75.0, width: view.bounds.width, height: 50.0)
-        let emitter = CAEmitterLayer()
+
         emitter.frame = rect
         emitter.emitterShape = CAEmitterLayerEmitterShape.rectangle
         emitter.emitterPosition = CGPoint(x: rect.width/2,
@@ -122,6 +156,6 @@ class ParticleEmittersViewController: UIViewController {
     }
 
     private func set(_ textField: UITextField, to: Float) {
-        textField.text = String(to)
+        textField.text = String(format: "%.2f", to)
     }
 }
