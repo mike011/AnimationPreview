@@ -10,21 +10,58 @@ import UIKit
 
 class FrameAnimationsViewController: UIViewController {
 
+    @IBOutlet var bird: UIImageView!
+    @IBOutlet weak var durationTextField: UITextField!
+    @IBOutlet weak var repeatCountTextField: UITextField!
+
+    var birdFrames = [
+        UIImage(named: "bird-1")!,
+        UIImage(named: "bird-2")!,
+        UIImage(named: "bird-3")!
+    ]
+
+    func loadBirdAnimation() {
+        bird.animationImages = birdFrames
+        bird.animationDuration = getDouble(for: durationTextField)
+        bird.animationRepeatCount = getInt(for: repeatCountTextField)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        setValues()
+    }
 
-        // Do any additional setup after loading the view.
+    func setValues() {
+        set(durationTextField, to: 0.33)
+        set(repeatCountTextField, to: 3000)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func resetButtonPressed(_ sender: Any) {
+        bird.stopAnimating()
+        setValues()
     }
-    */
 
+    @IBAction func goButtonPressed(_ sender: Any) {
+        loadBirdAnimation()
+        bird.startAnimating()
+    }
+
+    @IBAction func stopButtonPressed(_ sender: Any) {
+        bird.stopAnimating()
+    }
+
+    private func getDouble(for textField: UITextField) -> Double {
+        let text = textField.text ?? "0.0"
+        return Double(text) ?? 0.0
+    }
+
+    private func getInt(for textField: UITextField) -> Int {
+        let text = textField.text ?? "0"
+        return Int(text) ?? 0
+    }
+
+
+    private func set(_ textField: UITextField, to: Float) {
+        textField.text = String(format: "%.2f", to)
+    }
 }
