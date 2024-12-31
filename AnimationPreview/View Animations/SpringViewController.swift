@@ -61,7 +61,7 @@ class SpringViewController: UIViewController {
 
 }
 
-extension SpringViewController: CAAnimationDelegate {
+extension SpringViewController: @preconcurrency CAAnimationDelegate {
     public func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         goButton.isEnabled = true
     }
@@ -93,7 +93,7 @@ extension Numeric {
 }
 
 // MARK: Hyperlinking
-extension UIViewController: TTTAttributedLabelDelegate, SFSafariViewControllerDelegate {
+extension UIViewController: @preconcurrency TTTAttributedLabelDelegate, @preconcurrency SFSafariViewControllerDelegate {
     
     public func attributedLabel(_ label: TTTAttributedLabel!, didSelectLinkWith url: URL!) {
         let vc = SFSafariViewController(url: url, entersReaderIfAvailable: true)

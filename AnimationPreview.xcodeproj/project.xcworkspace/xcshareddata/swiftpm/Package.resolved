@@ -1,0 +1,15 @@
+{
+  "originHash" : "7cd135e69ba34db7176b3ffb71c3fbd50720b78009d04102e630e2e5edd90954",
+  "pins" : [
+    {
+      "identity" : "tttattributedlabel",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mmllr/TTTAttributedLabel",
+      "state" : {
+        "branch" : "master",
+        "revision" : "45d076071f42243810b9fa413e784291b2321352"
+      }
+    }
+  ],
+  "version" : 3
+}

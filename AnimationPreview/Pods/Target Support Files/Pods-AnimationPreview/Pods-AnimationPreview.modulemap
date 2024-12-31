@@ -1,6 +1,0 @@
-framework module Pods_AnimationPreview {
-  umbrella header "Pods-AnimationPreview-umbrella.h"
-
-  export *
-  module * { export * }
-}

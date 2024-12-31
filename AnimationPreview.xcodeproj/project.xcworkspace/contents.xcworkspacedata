@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/michael/Documents/swift/SpringAnimation/AnimationPreview.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
